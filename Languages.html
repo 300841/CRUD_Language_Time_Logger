@@ -1,0 +1,71 @@
+<html lang="en">
+   <body style="background-color:#FFFFFF;">
+      <center>
+         <h1>
+         <script>
+         var myHeading = document.querySelector('h1');
+         myHeading.textContent = 'Language Practice Time Logger';
+         </script>
+         </h1>
+      </center>
+      <center>
+         <img src="world_languages.jpeg" alt="world languages logo" border="0px" 
+               width="400px" height="235px" >
+      </center>
+      <br>
+      <br>
+      <center>
+         <form action='add.php' method = 'post'>
+            <select id='select' name='language'>
+                 <option value="Spanish" >Spanish</option>
+                 <option value="Portuguese" >Portuguese</option>
+                 <option value="German" >German</option>
+                 <option value="French" >French</option>
+                 <option value="Russian" >Russian</option>
+                 <option value="Chinese" >Chinese</option>
+                 <option value="Korean" >Korean</option>
+                 <option value="Vietnamese" >Vietnamese</option>
+                 <option value="Japanese" >Japanese</option>
+                 <option value="Thai" >Thai</option>
+                 <option value="Swahili" >Swahili</option>
+                 <option value="English" >English</option>
+            </select>
+            <input type='date' placeholder='Date' name='date'>
+            <input type='time' placeholder='Time In' name='timein'>
+            <input type='time' placeholder='Time Out' name='timeout'>
+            <br><br>
+            <input name = 'add' type = 'submit' value = 'Add'>
+
+         </form>
+         Find sessions for selected language:
+         <form action='search.php' method = 'post'>
+            <select id='select' name='language'>
+               <option value="Spanish" >Spanish</option>
+               <option value="Portuguese" >Portuguese</option>
+               <option value="German" >German</option>
+               <option value="French" >French</option>
+               <option value="Russian" >Russian</option>
+               <option value="Chinese" >Chinese</option>
+               <option value="Korean" >Korean</option>
+               <option value="Vietnamese" >Vietnamese</option>
+               <option value="Japanese" >Japanese</option>
+               <option value="Thai" >Thai</option>
+               <option value="Swahili" >Swahili</option>
+               <option value="English" >English</option>
+            </select>
+               <p></p>
+            <input name = 'search' type = 'submit' value = 'Search'>
+         </form>
+         Click to update information:
+         <form action='Update.html' method = 'post'>
+            <input type = 'submit' value = 'update' name = 'update'>
+         </form>
+         Enter a session ID to delete information:
+         <form action='delete.php' method = 'post'>
+            <input type = 'number' value = 'Session ID' name = 'Delete'>
+            <br><br>
+            <input type = 'submit' value = 'delete' name = 'delete'>
+         </form>
+      </center>
+   </body>
+</html>

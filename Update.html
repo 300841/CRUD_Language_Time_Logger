@@ -1,0 +1,43 @@
+<html lang="en">
+   <body style="background-color:#FFFFFF;">
+      <center>
+         <h1>
+         <script>
+         var myHeading = document.querySelector('h1');
+         myHeading.textContent = 'Language Practice Time Logger: Update a previously logged session';
+         </script>
+         </h1>
+      </center>
+      <center>
+         <img src="world_languages.jpeg" alt="world languages logo" border="0px" 
+               width="400px" height="235px" >
+      </center>
+      <br>
+      <br>
+      <center>
+         <form action='update.php' method = 'post'>
+            <input type='number' placeholder='Session ID' name='id_update' value='SessionID'>
+            <select id='select' name='language_update'>
+                 <option value="Spanish" >Spanish</option>
+                 <option value="Portuguese" >Portuguese</option>
+                 <option value="German" >German</option>
+                 <option value="French" >French</option>
+                 <option value="Russian" >Russian</option>
+                 <option value="Chinese" >Chinese</option>
+                 <option value="Korean" >Korean</option>
+                 <option value="Vietnamese" >Vietnamese</option>
+                 <option value="Japanese" >Japanese</option>
+                 <option value="Thai" >Thai</option>
+                 <option value="Swahili" >Swahili</option>
+                 <option value="English" >English</option>
+            </select>
+            <input type='date' placeholder='Date' name='date_update'>
+            <input type='time' placeholder='Time In' name='timein_update'>
+            <input type='time' placeholder='Time Out' name='timeout_update'>
+            <br><br>
+            <input name = 'udate' type = 'submit' value = 'Update'>
+
+         </form>
+      </center>
+   </body>
+</html>
